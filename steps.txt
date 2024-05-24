@@ -1,0 +1,10 @@
+Correr proyecto
+    python3 manage.py runserver
+
+
+Crear migraciones antes de Correr
+    python3 manage.py makemigrations  (Se crean los archivos de migraciones)
+    python3 manage.py migrate         (Se aplican las migraciones)
+
+Crear modelos
+    python3 manage.py startapp nombre_app
