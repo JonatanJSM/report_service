@@ -10,7 +10,7 @@ class FrontendAuthMiddleware:
     def __call__(self, request):
         frontend_token = request.META.get(FRONTEND_TOKEN_HEADER)
         print(frontend_token)
-        if request.path in ['/login', '/register']:
+        if request.path in ['/api/sesion/login', '/api/sesion/register']:
             if frontend_token != EXPECTED_FRONTEND_TOKEN:
                 return JsonResponse({'error': 'Unauthorized frontend'}, status=403)
 
