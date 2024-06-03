@@ -4,6 +4,6 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('infrastructure.django_app.reports.api.urls')),
+    path('api/', include('infrastructure.django_app.reports.urls')),
     path('api/sesion/', include('infrastructure.django_app.sesion.urls'))
 ]
