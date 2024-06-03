@@ -1,5 +1,7 @@
 Correr proyecto
     python3 manage.py runserver
+    python3 manage.py runserver 0.0.0.0:8000 (para poder probarlo con el celular con la IP de la computadora)
+        Cambiar en settings.py a -> ALLOWED_HOSTS = ['*']
 
 
 Crear migraciones antes de Correr
